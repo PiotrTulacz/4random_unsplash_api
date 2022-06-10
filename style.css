@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+body{
+    background-color: rgb(222, 222, 222);
+}
+/*imagesflex*/
+main .images{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-basis: auto
+}
+main .container{
+    margin: 0 10px;
+    flex-basis: calc(50% - 20px);
+}
+.images img{
+    padding: 40px 20px;
+    border-radius: 8%;
+    width: 100%;
+    height: auto;
+}
+.container{
+    position: relative;
+}
+.description{
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+/*text*/
+.by{
+    position: absolute;
+    left: 8%;
+    bottom: 15%;
+}
+.author{
+    position: absolute;
+    left: 8%;
+    bottom: 15%;
+}
+.on{
+    position: absolute;
+    left: 8%;
+    bottom: 15%;
+}
+.date{
+    position: absolute;
+    left: 8%;
+    bottom: 15%;
+}
+
+
+/*widoki*/
+@media (max-width: 800px) {
+    main .images{
+        flex-direction: column;
+    }
+}
