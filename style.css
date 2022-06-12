@@ -1,32 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto",sans-serif;
+
 }
 body{
     background-color: rgb(222, 222, 222);
 }
+
 /*imagesflex*/
+
 main .images{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    flex-basis: auto
+
 }
 main .container{
-    margin: 0 10px;
-    flex-basis: calc(50% - 20px);
+    margin: 30px 20px;
+    /*max-height: calc(50vh - 70px);*/
+    /*width: calc(50% - 40px);*/
+    flex-basis: calc(50% - 60px);
+}
+main .container:nth-of-type(1),main .container:nth-of-type(2){
+    margin-top: 70px;
+}
+main .container:nth-of-type(3),main .container:nth-of-type(4){
+    margin-bottom: 70px;
+}
+main .container:nth-of-type(odd){
+    margin-left: 25px;
+}
+main .container:nth-of-type(even){
+    margin-right: 25px;
 }
 .images img{
-    padding: 40px 20px;
-    border-radius: 8%;
+    padding: 0 0;
     width: 100%;
     height: auto;
+    box-shadow: 0 10px 10px 2px #484646;
+    border-radius: 7%;
+
 }
+.img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 7%;
+    /*background: linear-gradient(to bottom,  rgba(255,255,255,0), white 30%);*/
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 0) 45%);
+    opacity: 100%;
+}
+
+/*txt*/
 .container{
     position: relative;
 }
@@ -35,34 +69,135 @@ main .container{
     bottom: 15%;
     left: 8%;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 3.6em;
 }
-/*text*/
+
 .by{
     position: absolute;
+    font-weight: bold;
     left: 8%;
-    bottom: 15%;
+    bottom: 12%;
+    font-size: 1.5em;
 }
 .author{
     position: absolute;
-    left: 8%;
-    bottom: 15%;
+    left: 12%;
+    bottom: 10%;
+    text-decoration: underline;
+    color: #e13d8e;
+    font-size: 2em;
+    text-align: justify;
 }
 .on{
     position: absolute;
-    left: 8%;
-    bottom: 15%;
+    left: 55%;
+    bottom: 12%;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 .date{
     position: absolute;
-    left: 8%;
-    bottom: 15%;
+    left: 59%;
+    bottom: 10%;
+    text-align: justify;
+    font-size: 2em;
 }
 
 
-/*widoki*/
-@media (max-width: 800px) {
+/*views*/
+/*800maxwidth*/
+@media (max-width: 840px) {
+    /*imagesflex*/
     main .images{
         flex-direction: column;
+    }
+    header, footer{
+        padding: 30px;
+    }
+    main .container{
+        background-color: white;
+        /*max-height: calc(50vh - 70px);*/
+        /*width: calc(50% - 40px);*/
+        flex-basis: calc(50%);
+        border-radius: 5%;
+    }
+    main .container:nth-of-type(1),main .container:nth-of-type(2),main .container:nth-of-type(3),main .container:nth-of-type(4){
+        margin: 10px;
+    }
+    main .container:first-of-type{
+        margin-top: 60px;
+    }
+    main .container:last-of-type{
+        margin-bottom: 300px;
+    }
+    .images img{
+        box-shadow: 0 0;
+        border-radius: 0;
+    }
+    .img::after{
+        opacity: 0;
+    }
+  /*txt*/
+    .description{
+        bottom: 93%;
+        left: 5%;
+        font-size:1.5em;
+    }
+
+    .by{
+        left: 5%;
+        bottom: 9%;
+        font-size: 0.9em;
+    }
+    .author{
+        left: 11%;
+        bottom: 5%;
+        font-size: 1.2em;
+    }
+    .on{
+        left: 55%;
+        bottom: 9%;
+        font-size: 0.9em;
+    }
+    .date{
+        position: absolute;
+        left: 61%;
+        bottom: 5%;
+        font-size: 1.2em;
+    }
+}
+
+/*width1024px*/
+@media (min-width: 800px) and (max-width: 1024px) and(orientation: landscape) {
+    main .images{
+        flex-direction: row;
+    }
+    /*txt*/
+    .description{
+        bottom: 16%;
+        left: 8%;
+        font-size: 2.0em;
+    }
+
+    .by{
+        left: 8%;
+        bottom: 12%;
+        font-size: 1.2em;
+    }
+    .author{
+        left: 14%;
+        bottom: 8%;
+        font-size: 1.8em;
+    }
+    .on{
+        left: 55%;
+        bottom: 12%;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .date{
+        left: 63%;
+        bottom: 8%;
+        font-size: 1.8em;
     }
 }
