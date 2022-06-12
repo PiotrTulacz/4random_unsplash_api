@@ -69,7 +69,7 @@ main .container:nth-of-type(even){
     bottom: 15%;
     left: 8%;
     font-weight: bold;
-    font-size: 3.6em;
+    font-size: 2.5em;
 }
 
 .by{
@@ -77,15 +77,15 @@ main .container:nth-of-type(even){
     font-weight: bold;
     left: 8%;
     bottom: 12%;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .author{
     position: absolute;
-    left: 12%;
+    left: 14%;
     bottom: 10%;
     text-decoration: underline;
     color: #e13d8e;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: justify;
 }
 .on{
@@ -93,20 +93,21 @@ main .container:nth-of-type(even){
     left: 55%;
     bottom: 12%;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .date{
     position: absolute;
-    left: 59%;
+    left: 61%;
     bottom: 10%;
     text-align: justify;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 
 /*views*/
+
 /*800maxwidth*/
-@media (max-width: 840px) {
+@media (max-width: 840px){
     /*imagesflex*/
     main .images{
         flex-direction: column;
@@ -145,8 +146,8 @@ main .container:nth-of-type(even){
     }
 
     .by{
-        left: 5%;
-        bottom: 9%;
+        left: 4%;
+        bottom: 7%;
         font-size: 0.9em;
     }
     .author{
@@ -156,7 +157,7 @@ main .container:nth-of-type(even){
     }
     .on{
         left: 55%;
-        bottom: 9%;
+        bottom: 7%;
         font-size: 0.9em;
     }
     .date{
@@ -167,8 +168,7 @@ main .container:nth-of-type(even){
     }
 }
 
-/*width1024px*/
-@media (min-width: 800px) and (max-width: 1024px) and(orientation: landscape) {
+@media (max-width: 1440px) and(orientation: landscape) {
     main .images{
         flex-direction: row;
     }
@@ -176,7 +176,7 @@ main .container:nth-of-type(even){
     .description{
         bottom: 16%;
         left: 8%;
-        font-size: 2.0em;
+        font-size: 2em;
     }
 
     .by{
@@ -201,4 +201,40 @@ main .container:nth-of-type(even){
         font-size: 1.8em;
     }
 }
+
+/*width1440px*/
+@media (max-width: 1440px) and(orientation: landscape) {
+    main .images{
+        flex-direction: row;
+    }
+    /*txt*/
+    .description{
+        bottom: 16%;
+        left: 8%;
+        font-size: 2em;
+    }
+
+    .by{
+        left: 8%;
+        bottom: 12%;
+        font-size: 1.2em;
+    }
+    .author{
+        left: 14%;
+        bottom: 8%;
+        font-size: 1.8em;
+    }
+    .on{
+        left: 55%;
+        bottom: 12%;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .date{
+        left: 63%;
+        bottom: 8%;
+        font-size: 1.8em;
+    }
+}
+
 /*1*/
