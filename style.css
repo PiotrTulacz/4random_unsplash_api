@@ -109,7 +109,7 @@ main .container:nth-of-type(even){
 /*views*/
 
 /*800maxwidth*/
-@media (max-width: 840px){
+@media (max-width: 850px){
     /*imagesflex*/
     main .images{
         flex-direction: column;
@@ -170,7 +170,7 @@ main .container:nth-of-type(even){
     }
 }
 
-@media (max-width: 1440px) and(orientation: landscape) {
+@media (max-width: 1024px) and(orientation: landscape) {
     main .images{
         flex-direction: row;
     }
