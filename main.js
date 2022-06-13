@@ -21,6 +21,6 @@ fetch(endpoint)
         })
 
     .catch((error) => {
-     console.log("error");
+     alert("demo api - Query limit exceeded (50/per/hour)");
 })
 
