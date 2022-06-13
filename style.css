@@ -143,7 +143,7 @@ main .container:nth-of-type(even){
 }
 
 /*800maxwidth*/
-@media (max-width: 900px){
+@media (max-width: 840px){
     /*imagesflex*/
     main .images{
         flex-direction: column;
