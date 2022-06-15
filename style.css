@@ -66,13 +66,13 @@ main .container:nth-of-type(even){
 .container{
     position: relative;
 }
-.description{
-    position: absolute;
-    bottom: 20%;
-    left: 6%;
-    font-weight: bold;
-    font-size: 2em;
-}
+/*.description{*/
+/*    position: absolute;*/
+/*    bottom: 20%;*/
+/*    left: 6%;*/
+/*    font-weight: bold;*/
+/*    font-size: 2em;*/
+/*}*/
 
 .by{
     position: absolute;
@@ -113,11 +113,11 @@ main .container:nth-of-type(even){
         flex-direction: row;
     }
     /*txt*/
-    .description{
-        bottom: 16%;
-        left: 8%;
-        font-size: 1.3em;
-    }
+    /*.description{*/
+    /*    bottom: 16%;*/
+    /*    left: 8%;*/
+    /*    font-size: 1.3em;*/
+    /*}*/
 
     .by{
         left: 8%;
@@ -175,11 +175,11 @@ main .container:nth-of-type(even){
         opacity: 0;
     }
   /*txt*/
-    .description{
-        bottom: 90%;
-        left: 6%;
-        font-size:1.2em;
-    }
+  /*  .description{*/
+  /*      bottom: 90%;*/
+  /*      left: 6%;*/
+  /*      font-size:1.2em;*/
+  /*  }*/
 
     .by{
         left: 4%;
